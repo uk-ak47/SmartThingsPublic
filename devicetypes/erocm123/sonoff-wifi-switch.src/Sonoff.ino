@@ -206,7 +206,7 @@ void calibrate(int voltage = 120) {
 #define REL_PIN1       12
 #define LED_PIN1       13
 #define KEY_PIN1       0
-#define EXT_PIN        14
+#define EXT_PIN        03
 #endif
 
 #if defined SHELLY
@@ -243,8 +243,8 @@ void calibrate(int voltage = 120) {
 #endif
 
 #if defined SONOFF || defined SONOFF_TH
-#define EXT_PIN        14
-#define DS_PIN         14
+#define EXT_PIN        03
+#define DS_PIN         03
 #define DHTTYPE DHT22
 DHT dht(EXT_PIN, DHTTYPE);
 float temperature;
